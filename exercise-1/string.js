@@ -1,4 +1,4 @@
-var word = "@grbge fergr hello world vrv feg , fef".trim();
+var word = "Hello World".trim();
 
 function replaceWord(text){
 	return text.replace(/[^a-z0-9-]/g, ' ');
@@ -26,3 +26,8 @@ function capitalize(text, separate) {
 	return text.toLowerCase().split(' ').join("_");
  }
 
+
+console.log(ucfirst(word));
+console.log(capitalize(word, " "));
+console.log(camelCase(word, ""));
+console.log(snake_case(word, "_"));
